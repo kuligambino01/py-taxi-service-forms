@@ -2,11 +2,11 @@
 
 
 {% block content %}
-  <h1>Delete car {{ car.model }}</h1>
+  <h1>Delete car {{ object.model }}</h1>
 
   <form method="post" action="">
     {% csrf_token %}
-    <div>Confirm to delete car model {{ car.model }}</div>
+    <div>Confirm to delete car model {{ object.model }}</div>
     <input value="confirm" type="submit">
 
   </form>

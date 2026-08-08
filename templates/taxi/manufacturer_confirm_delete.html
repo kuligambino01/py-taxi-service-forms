@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+  <h1>Delete manufacturer <i>{{ object.name }}</i></h1>
+
+  <form action="" method="post">
+    {% csrf_token %}
+    <div style="color:red">Are you sure you want DELETE manufacturer and all cars related to it?</div>
+    <input type="submit" value="Confirm">
+  </form>
+
+
+{% endblock %}

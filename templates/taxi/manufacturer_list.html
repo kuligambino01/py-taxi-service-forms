@@ -35,9 +35,7 @@
                class="btn btn-danger btn-sm">-</a>
           </td>
           <td>
-            <a href="{% url 'taxi:manufacturer-update' manufacturer.id %}">
-              <button class="btn btn-primary">Update</button>
-            </a>
+            <a class="btn btn-primary" href="{% url 'taxi:manufacturer-update' manufacturer.id %}">Update</a>
           </td>
         </tr>
       {% endfor %}
